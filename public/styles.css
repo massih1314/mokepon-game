@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+
+body {
+  font-family: 'Tourney', cursive;
+  background-color: #3C6255;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  color:whitesmoke;
+  font-size: 45px; 
+  font-family: 'Tourney', cursive;
+}
+.subtitulo {
+  color:whitesmoke;
+  font-size: 25px;
+  font-family: 'Tourney', cursive;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+.tarjeta-de-mokepon {
+  width: px;
+  height: 120px;
+  background:#61876E;
+  padding: 10px;
+  box-sizing: border-box; 
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota {
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 3px solid white;
+  color: whitesmoke;
+  font-family: 'Tourney', cursive;
+  margin-top: 30px;
+}
+
+input {
+  display:none; 
+}   
+
+input:checked + label {
+  background-color: #A6BB8D;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque{
+  background-color:#61876E;
+  padding: 10px;
+  box-sizing: border-box; 
+  border-radius: 20px;
+  border-color: transparent;
+  width: 80px;
+  color: whitesmoke;
+  font-family: 'Tourney', cursive;
+}
+
+#mensajes {
+  width: 300px;
+  background:#EAE7B1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #3C6255;
+  font-family: 'Tourney', cursive;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  grid-column-gap: 50px;
+  border: 4px solid white;
+  border-radius: 20px;
+  width: 300px;
+  justify-content: space-between;
+  color: white;
+  background-color: #A6BB8D;
+  opacity: 0.5;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+display: flex;
+flex-direction: column;
+align-items: center;  
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#ver-mapa button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 3px solid white;
+  color: whitesmoke;
+  font-family: 'Tourney', cursive;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 560px) {
+  .tarjetas, .tarjetas-ataques {
+   flex-direction: column;
+  }
+}
+
+
+@media (max-width: 300px) {
+  #ver-mapa div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+}
